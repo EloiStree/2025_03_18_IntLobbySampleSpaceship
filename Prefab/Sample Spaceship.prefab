@@ -288,6 +288,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_renderers:
   - {fileID: 6516840050807842522}
+--- !u!1 &1732319632538617481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5344173412213277124}
+  - component: {fileID: 1635488042680362468}
+  m_Layer: 0
+  m_Name: Int To Action
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5344173412213277124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732319632538617481}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3164706166441020439}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1635488042680362468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732319632538617481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ce803794db5244c81e482babb5a4e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data:
+  - m_integer: 420003
+    m_onInvoke:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5837472703846080481}
+          m_TargetAssemblyTypeName: Eloi.IntAction.IntActionMono_KillTheBugMission,
+            be.elab.basicactioniid
+          m_MethodName: KillAllBugs
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2547342001231743547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,6 +1307,7 @@ Transform:
   - {fileID: 3129969834618373615}
   - {fileID: 9188547648111433669}
   - {fileID: 8156265552297326632}
+  - {fileID: 5344173412213277124}
   m_Father: {fileID: 5468341808170001957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4844688730097091909
@@ -1525,6 +1588,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6055409785750212715, guid: ff75e4fc5726da846b820185b0d811f4, type: 3}
   m_PrefabInstance: {fileID: 8147690090207044934}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5837472703846080481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2310547308569836199, guid: ff75e4fc5726da846b820185b0d811f4, type: 3}
+  m_PrefabInstance: {fileID: 8147690090207044934}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f492c19a7a9af4b806eee28602af0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8395641714974237775
 PrefabInstance:
   m_ObjectHideFlags: 0
