@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 41149863}
   - component: {fileID: 41149862}
-  - component: {fileID: 41149861}
   - component: {fileID: 41149864}
   m_Layer: 0
   m_Name: Main Camera
@@ -138,14 +137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &41149861
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41149860}
-  m_Enabled: 1
 --- !u!20 &41149862
 Camera:
   m_ObjectHideFlags: 0
@@ -460,10 +451,66 @@ PrefabInstance:
       propertyPath: m_camera
       value: 
       objectReference: {fileID: 41149862}
+    - target: {fileID: 6654759379632300502, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6654759379632300502, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6654759379632300502, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236448934043173665, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236448934043173665, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236448934043173665, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7399528554863979828, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
       propertyPath: m_light
       value: 
       objectReference: {fileID: 999001036}
+    - target: {fileID: 7932521649103750555, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.856
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932521649103750555, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000007256935
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932521649103750555, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000010074939
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932521649103750555, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932521649103750555, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932521649103750555, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932521649103750555, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932521649103750555, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
     - target: {fileID: 8856862931645023416, guid: 94ccc786fa6399a49b65e771ae44f9d6, type: 3}
       propertyPath: m_Name
       value: Sample Spaceship
