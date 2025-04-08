@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace Eloi.IntAction
 {
-    public class IntActionMono_BugToKill : DefaultIntegerEmitterEventMono, I_IntActionBroadcastListener
+    public class IntLobbyActionMono_BugToKill : DefaultIntegerListenAndEmitterEventMono
     {
 
         [Header("Kill")]

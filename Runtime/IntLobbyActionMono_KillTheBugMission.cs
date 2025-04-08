@@ -2,7 +2,7 @@
 
 namespace Eloi.IntAction
 {
-    public class IntActionMono_KillTheBugMission : AbstractIntegerListenAndEmitterMono
+    public class IntLobbyActionMono_KillTheBugMission : AbstractIntegerListenAndEmitterMono
     {
             public IntActionId m_atLeastBugSpawned = new IntActionId(420001);
             public IntActionId m_atAllBugSpawned = new IntActionId(420002);
@@ -16,7 +16,7 @@ namespace Eloi.IntAction
             public bool m_isBugKilled = false;
             public bool m_isMissionCompleted = false;
 
-            public IntActionMono_BugToKill[] m_bugsToKill;
+            public IntLobbyActionMono_BugToKill[] m_bugsToKill;
 
         public int m_bugSpawnRangeInt = 421000;
         public int m_bugKillRangeInt = 431000;
@@ -24,7 +24,7 @@ namespace Eloi.IntAction
         public void FindBugsToKillInChildren()
         {
 
-            m_bugsToKill = this.gameObject. GetComponentsInChildren<IntActionMono_BugToKill>(true);
+            m_bugsToKill = this.gameObject. GetComponentsInChildren<IntLobbyActionMono_BugToKill>(true);
         }
         [ContextMenu("Give Bugs id")]
         public void GiveBugKillSpawnId()
