@@ -1,0 +1,4 @@
+Toggle Menu.
+It allows to turn on and off some condition in the game.
+Some a light, shield
+Some are mission and important check.

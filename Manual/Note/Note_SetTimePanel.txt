@@ -1,0 +1,3 @@
+It was ask to be able to change the game the players can play at runtime.
+This button set the time allowed 1-10 minutes
+Reset buttons, allows to reset the current game time to zero. 

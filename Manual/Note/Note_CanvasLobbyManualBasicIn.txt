@@ -1,0 +1,39 @@
+Code In the Demo:
+101 Load Game Scene
+401 Call Recalibration Scene
+
+108 208 Light
+102 202 Shield
+103 203 Alarm
+
+151 251 Code Enter Mission 
+152 252 Bug Killed Mission
+
+
+600 Reset current time start to zero
+601 Set Max Game Time to 1 minutes
+602 Set Max Game Time to 2 minutes
+603 Set Max Game Time to 3 minutes
+604 Set Max Game Time to 4 minutes
+605 Set Max Game Time to 5 minutes
+606 Set Max Game Time to 6 minutes
+607 Set Max Game Time to 7 minutes
+608 Set Max Game Time to 8 minutes
+609 Set Max Game Time to 9 minutes
+610 Set Max Game Time to 10 minutes
+
+
+700 Set Light to Red
+701 Set Light to Green
+702 Set Light to Blue
+708 Set Light to While
+709 Set Light to Black
+
+801 901 Blob Bug Cloud is alive
+802 902 Blob Bug Slime is alive
+803 903 Blob Bug Spike is alive
+804 904 Blob Bug Flamme is alive
+
+7 Trigger Gandalf Sax for audio testing
+
+
