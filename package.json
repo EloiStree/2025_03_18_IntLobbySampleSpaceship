@@ -2,7 +2,7 @@
 {                                                                                
   "name": "be.elab.intlobbysampleship",                              
   "displayName": "Int Lobby Sample Spaceship",                        
-  "version": "0.0.1",                         
+  "version": "2025.4.10",                         
   "unity": "2018.1",                             
   "unityRelease": "",                             
   "description": "A sample demo of how you can build a multiplayer game spaceship with only integer in and out.",                         
