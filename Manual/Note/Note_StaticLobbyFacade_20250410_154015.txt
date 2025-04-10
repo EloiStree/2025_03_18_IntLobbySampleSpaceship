@@ -1,0 +1,10 @@
+
+If you're making an integer-based game,  
+the only things that matter are:  
+
+- What the lobby receives:  
+  `StaticIntMono_ListenIntegerReceivedFromServer`  
+- What the player wants to send to the lobby:  
+  `StaticIntMono_PushUnityToServer`  
+
+All other complexity is hidden behind the static link.

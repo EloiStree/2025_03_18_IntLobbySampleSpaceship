@@ -1,0 +1,16 @@
+
+You send an integer and receive one in return.
+
+Now, let’s broadcast that to the child objects.
+
+This avoids creating static or tightly coupled links everywhere.
+
+To listen for integers that a child wants to send to the lobby, use:  
+- `IntActionMono_ListenToIntegerEmitter`
+
+To notify all children that an integer was received, use:  
+- `IntActionMono_BroadcastDiffuser`
+
+If you want to abstract away the lobby logic, you can pair it with these static classes:  
+- `StaticIntMono_ListenIntegerReceivedFromServer`  
+- `StaticIntMono_PushUnityToServer`
