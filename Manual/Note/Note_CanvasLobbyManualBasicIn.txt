@@ -2,10 +2,11 @@ Code In the Demo:
 101 Load Game Scene
 401 Call Recalibration Scene
 
-108 208 Light
 102 202 Shield
 103 203 Alarm
+108 208 Light
 
+150 250 Missions are Completed 
 151 251 Code Enter Mission 
 152 252 Bug Killed Mission
 

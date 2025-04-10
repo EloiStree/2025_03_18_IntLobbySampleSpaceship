@@ -4,7 +4,7 @@ namespace Eloi.IntAction
 {
     public class IntLobbyActionMono_KillTheBugMission : AbstractIntegerListenAndEmitterMono
     {
-            public IntActionId m_atLeastBugSpawned = new IntActionId(420001);
+            public IntActionId m_atLeastOneBugSpawned = new IntActionId(420001);
             public IntActionId m_atAllBugSpawned = new IntActionId(420002);
             public IntActionId m_allBugKilled = new IntActionId(420003);
             public IntActionId m_bugsMissionComplete = new IntActionId(420004);
@@ -137,8 +137,8 @@ namespace Eloi.IntAction
                 if (oneBugSpawned != m_isLeastOneBugSpawned)
                 {
                     m_isLeastOneBugSpawned = oneBugSpawned;
-                    m_onIntegerActionEmitted.Invoke(m_atLeastBugSpawned.m_intActionValue);
-                    m_lastPushed = m_atLeastBugSpawned.m_intActionValue;
+                    m_onIntegerActionEmitted.Invoke(m_atLeastOneBugSpawned.m_intActionValue);
+                    m_lastPushed = m_atLeastOneBugSpawned.m_intActionValue;
                 }
                 if (allBugSpawned != m_isAllBugSpawned)
                 {

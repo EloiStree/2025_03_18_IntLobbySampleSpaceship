@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Eloi.IntAction
@@ -43,7 +44,7 @@ namespace Eloi.IntAction
         [ContextMenu("Spawn Random")]
         public void SapwnRandomOne()
         {
-            int randomIndex = Random.Range(0, m_bugsToKill.Length);
+            int randomIndex = UnityEngine.Random.Range(0, m_bugsToKill.Length);
             if (m_bugsToKill[randomIndex] != null)
             {
                 m_bugsToKill[randomIndex].SetActive(true);
@@ -146,14 +147,14 @@ namespace Eloi.IntAction
                 }
             }
         }
-        public void AddEmissionListener(UnityAction<int> listener)
+        public void AddEmissionListener(Action<int> listener)
         {
-            m_onIntegerAction.AddListener(listener);
+            m_onIntegerAction.AddListener(listener.Invoke);
         }
 
-        public void RemoveEmissionListener(UnityAction<int> listener)
+        public void RemoveEmissionListener(Action<int> listener)
         {
-            m_onIntegerAction.RemoveListener(listener);
+            m_onIntegerAction.RemoveListener(listener.Invoke);
         }
 
         public GameObject[] m_bugsToKill;
