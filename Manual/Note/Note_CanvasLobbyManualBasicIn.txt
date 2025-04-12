@@ -30,6 +30,8 @@ Code In the Demo:
 708 Set Light to While
 709 Set Light to Black
 
+800 Kill them all
+900 Spawn them all
 801 901 Blob Bug Cloud is alive
 802 902 Blob Bug Slime is alive
 803 903 Blob Bug Spike is alive

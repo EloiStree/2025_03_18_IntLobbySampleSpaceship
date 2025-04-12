@@ -137,7 +137,7 @@ public class IntLobbyActionMono_ImpactSpaceShipFacadeEvent : DefaultIntegerListe
 
 
     //108 208 Light
-    public IntLobbyAction_UnityOnOffBoolean m_toggleLight = new IntLobbyAction_UnityOnOffBoolean(108, 208);
+    public IntLobbyAction_Toggle m_toggleLight = new IntLobbyAction_Toggle(108, 208);
 
     [ContextMenu("Turn on Light")]
     public void TurnOnLight() => m_toggleLight.TurnOnAndPushInteger();
@@ -147,7 +147,7 @@ public class IntLobbyActionMono_ImpactSpaceShipFacadeEvent : DefaultIntegerListe
 
 
     //102 202 Shield
-    public IntLobbyAction_UnityOnOffBoolean m_toggleShield = new IntLobbyAction_UnityOnOffBoolean(102, 202);
+    public IntLobbyAction_Toggle m_toggleShield = new IntLobbyAction_Toggle(102, 202);
 
     [ContextMenu("Turn on Shield")]
     public void TurnOnShield() => m_toggleShield.TurnOnAndPushInteger();
@@ -157,7 +157,7 @@ public class IntLobbyActionMono_ImpactSpaceShipFacadeEvent : DefaultIntegerListe
 
 
     //103 203 Alarm
-    public IntLobbyAction_UnityOnOffBoolean m_toggleAlarm = new IntLobbyAction_UnityOnOffBoolean(103, 203);
+    public IntLobbyAction_Toggle m_toggleAlarm = new IntLobbyAction_Toggle(103, 203);
 
 
     [ContextMenu("Turn on Alarm")]
@@ -169,12 +169,12 @@ public class IntLobbyActionMono_ImpactSpaceShipFacadeEvent : DefaultIntegerListe
 
 
     //150 251 Code Enter Mission 
-    public IntLobbyAction_UnityOnOffBoolean m_toggleMissionsCompleted = new IntLobbyAction_UnityOnOffBoolean(150, 250);
+    public IntLobbyAction_Toggle m_toggleMissionsCompleted = new IntLobbyAction_Toggle(150, 250);
 
     //151 251 Code Enter Mission 
-    public IntLobbyAction_UnityOnOffBoolean m_toggleMissionEnterCode = new IntLobbyAction_UnityOnOffBoolean(151, 251);
+    public IntLobbyAction_Toggle m_toggleMissionEnterCode = new IntLobbyAction_Toggle(151, 251);
     //152 252 Bug Killed Mission
-    public IntLobbyAction_UnityOnOffBoolean m_toggleMissionBlobKilled = new IntLobbyAction_UnityOnOffBoolean(152, 252);
+    public IntLobbyAction_Toggle m_toggleMissionBlobKilled = new IntLobbyAction_Toggle(152, 252);
 
 
     [ContextMenu("Missions Uncompleted")]
@@ -316,13 +316,13 @@ public class IntLobbyActionMono_ImpactSpaceShipFacadeEvent : DefaultIntegerListe
 
  
     //801 901 Blob Bug Cloud is alive
-    public IntLobbyAction_UnityOnOffBoolean m_toggleBlobBugCloud = new IntLobbyAction_UnityOnOffBoolean(801, 901);
+    public IntLobbyAction_Toggle m_toggleBlobBugCloud = new IntLobbyAction_Toggle(801, 901);
     //802 902 Blob Bug Slime is alive
-    public IntLobbyAction_UnityOnOffBoolean m_toggleBlobBugSlime = new IntLobbyAction_UnityOnOffBoolean(802, 902);
+    public IntLobbyAction_Toggle m_toggleBlobBugSlime = new IntLobbyAction_Toggle(802, 902);
     //803 903 Blob Bug Spike is alive
-    public IntLobbyAction_UnityOnOffBoolean m_toggleBugSpike = new IntLobbyAction_UnityOnOffBoolean(803, 903);
+    public IntLobbyAction_Toggle m_toggleBugSpike = new IntLobbyAction_Toggle(803, 903);
     //804 904 Blob Bug Flamme is alive
-    public IntLobbyAction_UnityOnOffBoolean m_toggleBlobBugFlamme = new IntLobbyAction_UnityOnOffBoolean(804, 904);
+    public IntLobbyAction_Toggle m_toggleBlobBugFlamme = new IntLobbyAction_Toggle(804, 904);
 
 
     [ContextMenu("Turn blob on")]

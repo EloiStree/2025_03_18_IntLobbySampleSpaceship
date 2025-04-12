@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace Eloi.IntAction
 {
-    public class IntActionMono_KillTheBugMissionFromGameObject : MonoBehaviour, I_IntegerEmitter
+    public class IntActionMono_KillTheBugMissionFromGameObject : MonoBehaviour, I_IntActionEmitter
     {
 
         public UnityEvent<int> m_onIntegerAction;
@@ -120,20 +120,20 @@ namespace Eloi.IntAction
             if (oneBugSpawned != m_isLeastOneBugSpawned)
             {
                 m_isLeastOneBugSpawned = oneBugSpawned;
-                m_onIntegerAction.Invoke(m_atLeastBugSpawned.m_intActionValue);
-                m_lastPushed = m_atLeastBugSpawned.m_intActionValue;
+                m_onIntegerAction.Invoke(m_atLeastBugSpawned.Value);
+                m_lastPushed = m_atLeastBugSpawned.Value;
             }
             if (allBugSpawned != m_isAllBugSpawned)
             {
                 m_isAllBugSpawned = allBugSpawned;
-                m_onIntegerAction.Invoke(m_atAllBugSpawned.m_intActionValue);
-                m_lastPushed = m_atAllBugSpawned.m_intActionValue;
+                m_onIntegerAction.Invoke(m_atAllBugSpawned.Value);
+                m_lastPushed = m_atAllBugSpawned.Value;
             }
             if (allBugKilled != m_isBugKilled)
             {
                 m_isBugKilled = allBugKilled;
-                m_onIntegerAction.Invoke(m_allBugKilled.m_intActionValue);
-                m_lastPushed = m_allBugKilled.m_intActionValue;
+                m_onIntegerAction.Invoke(m_allBugKilled.Value);
+                m_lastPushed = m_allBugKilled.Value;
             }
 
             bool isMissionComplete = allBugSpawned && allBugKilled;
@@ -142,8 +142,8 @@ namespace Eloi.IntAction
                 m_isMissionCompleted = isMissionComplete;
                 if (m_isMissionCompleted)
                 {
-                    m_onIntegerAction.Invoke(m_bugsMissionComplete.m_intActionValue);
-                    m_lastPushed = m_bugsMissionComplete.m_intActionValue;
+                    m_onIntegerAction.Invoke(m_bugsMissionComplete.Value);
+                    m_lastPushed = m_bugsMissionComplete.Value;
                 }
             }
         }
