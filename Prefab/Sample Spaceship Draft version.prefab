@@ -5063,7 +5063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5468341808170001957}
   m_Layer: 0
-  m_Name: Sample Spaceship
+  m_Name: Sample Spaceship Draft version
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
