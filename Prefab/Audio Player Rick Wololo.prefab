@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7096628457206065757}
   - component: {fileID: 2118009247429178266}
+  - component: {fileID: 4874053895849717651}
+  - component: {fileID: 7809720141167729086}
   - component: {fileID: 6391059702867207033}
   - component: {fileID: 548207226088383003}
   m_Layer: 5
@@ -135,6 +137,76 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4874053895849717651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6989964356369671611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4caa3f1f30ebb44598fb17504406236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_integerToValueEvent:
+    m_onValueTriggered:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2118009247429178266}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: PlayOneShot
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    m_lastTriggeredValue: {fileID: 0}
+    m_integerToValue:
+    - m_integer:
+        m_intActionValue: 30
+      m_linkData: {fileID: 8300000, guid: f51cb7428ca889a4b84614d051d34955, type: 3}
+    - m_integer:
+        m_intActionValue: 404
+      m_linkData: {fileID: 8300000, guid: 6fb183226150f5f468426723eeea9d7e, type: 3}
+--- !u!114 &7809720141167729086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6989964356369671611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12670f1b06817ea489e4c7e2ce555f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targetsToAutoFill:
+  - {fileID: 6989964356369671611}
+  m_onIntegerActionLoaded:
+    m_PersistentCalls:
+      m_Calls: []
+  m_collectionToLoad:
+  - {fileID: 4900000, guid: 0101b9ba9af1f3948a9bcd55c9ae58f1, type: 3}
+  - {fileID: 4900000, guid: aa9d9a78e6b63304492c603eb9533a57, type: 3}
+  m_pushIntegerAtAwake: 1
+  m_actionsValueIfNull: 5555555
+  m_actionIntegerCollectionLoaded:
+  - m_loadedDescription: This integer will play the sound Wololo of Age of Empire
+      in the game.
+    m_loadedInteger:
+      m_intActionValue: 30
+    m_integerAsFile: {fileID: 4900000, guid: 0101b9ba9af1f3948a9bcd55c9ae58f1, type: 3}
+  - m_loadedDescription: This integer will play a short Rick Roll loop in the game
+      as easter egg.
+    m_loadedInteger:
+      m_intActionValue: 404
+    m_integerAsFile: {fileID: 4900000, guid: aa9d9a78e6b63304492c603eb9533a57, type: 3}
+  m_collectionAsInteger: 1e00000094010000
 --- !u!114 &6391059702867207033
 MonoBehaviour:
   m_ObjectHideFlags: 0

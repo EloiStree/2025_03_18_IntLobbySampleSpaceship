@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_lastReceived: 0
-  m_source: {fileID: 217754898566688457}
+  m_sources: []
   m_childrenListening:
   - {fileID: 3543113828225676893}
   - {fileID: 2319794090419819650}
@@ -347,7 +347,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_source: {fileID: 217754898566688457}
+  m_sources: []
   m_lookForInactive: 1
   m_emitterInChildrens:
   - {fileID: 3543113828225676893}
@@ -592,37 +592,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &503821000713635339
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2230649862648045078}
-  m_Layer: 0
-  m_Name: No NTP Offset
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2230649862648045078
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503821000713635339}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5468341808170001957}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &658140951472177579
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +743,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_source: {fileID: 803967663945688318}
+  m_sources: []
   m_lookForInactive: 1
   m_emitterInChildrens:
   - {fileID: 6267106112263571877}
@@ -928,7 +897,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 316591722746458833}
-  - component: {fileID: 2423215164563577749}
   - component: {fileID: 6409626799262402408}
   - component: {fileID: 7399528554863979828}
   - component: {fileID: 1057755440982062176}
@@ -954,88 +922,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3164706166441020439}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2423215164563577749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1060404505107357444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 482c2250f9d29a749956b7020cab9c09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_onColorChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6409626799262402408}
-        m_TargetAssemblyTypeName: Eloi.IntAction.IntActionUnityMono_SetCameraBackgroundColor,
-          be.elab.basicactioniid
-        m_MethodName: SetColor
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7399528554863979828}
-        m_TargetAssemblyTypeName: Eloi.IntAction.IntActionUnityMono_SetLightColor,
-          be.elab.basicactioniid
-        m_MethodName: SetColor
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1057755440982062176}
-        m_TargetAssemblyTypeName: Eloi.IntAction.IntActionUnityMono_SetRendererColor,
-          be.elab.basicactioniid
-        m_MethodName: SetColor
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_setColor:
-  - m_integer:
-      m_intActionValue: 700
-    m_colorValueToSet: {r: 1, g: 0, b: 0, a: 1}
-  - m_integer:
-      m_intActionValue: 701
-    m_colorValueToSet: {r: 0, g: 1, b: 0, a: 1}
-  - m_integer:
-      m_intActionValue: 702
-    m_colorValueToSet: {r: 0, g: 0, b: 1, a: 1}
-  - m_integer:
-      m_intActionValue: 703
-    m_colorValueToSet: {r: 1, g: 0.5, b: 0, a: 1}
-  - m_integer:
-      m_intActionValue: 704
-    m_colorValueToSet: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - m_integer:
-      m_intActionValue: 705
-    m_colorValueToSet: {r: 0.5, g: 0, b: 0.5, a: 1}
-  - m_integer:
-      m_intActionValue: 706
-    m_colorValueToSet: {r: 1, g: 0.5, b: 0.5, a: 1}
-  - m_integer:
-      m_intActionValue: 707
-    m_colorValueToSet: {r: 0, g: 1, b: 1, a: 1}
-  - m_integer:
-      m_intActionValue: 708
-    m_colorValueToSet: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &6409626799262402408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,24 +1412,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77ce803794db5244c81e482babb5a4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_onIntegerActionReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  m_lastReceived: 0
   m_data:
-  - m_integer: 420003
-    m_onInvoke:
+  - m_triggerValue:
+      m_intActionValue: 700
+    m_onTriggered:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 5837472703846080481}
-          m_TargetAssemblyTypeName: Eloi.IntAction.IntActionMono_KillTheBugMission,
-            be.elab.basicactioniid
-          m_MethodName: KillAllBugs
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!1 &1780684071076009630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,7 +1907,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1550393428707043551}
-  - component: {fileID: 7847498815560514172}
   - component: {fileID: 7052955078942765706}
   m_Layer: 0
   m_Name: Light Switch
@@ -2053,47 +1930,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3164706166441020439}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7847498815560514172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3179425399836608309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b728f04b69b39b4094667b1f48d1e1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_integerSwitch:
-    m_intActionValue: 308
-  m_integerOff:
-    m_intActionValue: 208
-  m_integerOn:
-    m_intActionValue: 108
-  m_currentValue: 0
-  m_onSwitchValue:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8690431806911825977}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onSwitchToTrue:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onSwitchToFalse:
-    m_PersistentCalls:
-      m_Calls: []
-  m_lastReceivedValue: 0
 --- !u!114 &7052955078942765706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2576,49 +2412,6 @@ MonoBehaviour:
   m_relativeGameTimeInSeconds: 0
   m_countdownInSeconds: 0
   m_percentGameTime: 0
-  m_resetTimeToNow:
-    m_intActionValue: 600
-  m_setGameTime:
-  - m_label: 601
-    m_integer:
-      m_intActionValue: 601
-    m_floatValueToSet: 60
-  - m_label: 602
-    m_integer:
-      m_intActionValue: 602
-    m_floatValueToSet: 120
-  - m_label: 603
-    m_integer:
-      m_intActionValue: 603
-    m_floatValueToSet: 180
-  - m_label: 604
-    m_integer:
-      m_intActionValue: 604
-    m_floatValueToSet: 240
-  - m_label: 605
-    m_integer:
-      m_intActionValue: 605
-    m_floatValueToSet: 300
-  - m_label: 606
-    m_integer:
-      m_intActionValue: 606
-    m_floatValueToSet: 360
-  - m_label: 607
-    m_integer:
-      m_intActionValue: 607
-    m_floatValueToSet: 420
-  - m_label: 608
-    m_integer:
-      m_intActionValue: 608
-    m_floatValueToSet: 480
-  - m_label: 609
-    m_integer:
-      m_intActionValue: 609
-    m_floatValueToSet: 540
-  - m_label: 610
-    m_integer:
-      m_intActionValue: 610
-    m_floatValueToSet: 600
 --- !u!114 &25226469435400755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2934,19 +2727,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d6a113380524843b7d4ad091477607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_reloadCurrentScene:
-    m_intActionValue: 0
-  m_sceneIndexSet: []
-  m_sceneNameSet:
-  - m_description: 
-    m_integer: 101
-    m_sceneName: StartGameLobby
-  - m_description: 
-    m_integer: 201
-    m_sceneName: EndGameLobby
-  - m_description: 
-    m_integer: 301
-    m_sceneName: PlayerSelectionLobby
 --- !u!114 &6350119589799629714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3324,72 +3104,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d504617b6d062234bbea903bd2e0959d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_onIntegerActionEmitted:
-    m_PersistentCalls:
-      m_Calls: []
-  m_lastPushed: 0
-  m_on:
-    m_intActionValue: 103
-  m_off:
-    m_intActionValue: 203
-  m_currentValue: 0
-  m_onUpdated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onOn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5975844892468466549}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 3840929311687803410}
-        m_TargetAssemblyTypeName: ShipMono_RotateAroundAxis, be.elab.intlobbysampleship
-        m_MethodName: SetAsRotatingOn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  m_onOff:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5975844892468466549}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3840929311687803410}
-        m_TargetAssemblyTypeName: ShipMono_RotateAroundAxis, be.elab.intlobbysampleship
-        m_MethodName: SetAsRotatingOff
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_toggle:
+    m_onIntegerId:
+      m_intActionValue: 1
+    m_offIntegerId:
+      m_intActionValue: 0
+    m_currentValue: 0
+    m_onValueUpdated:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onOnChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onOffChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &3840929311687803410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4098,10 +3830,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_lastReceived: 0
-  m_source: {fileID: 9054717968878335986}
+  m_sources: []
   m_childrenListening:
-  - {fileID: 2423215164563577749}
-  - {fileID: 7847498815560514172}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 9133153688995194675}
   - {fileID: 4577157568715093285}
   - {fileID: 4979612625857997779}
@@ -4119,7 +3851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_lastReceived: 0
-  m_source: {fileID: 658140951472177579}
+  m_sources: []
   m_childrenListening:
   - {fileID: 526160165815060582}
   m_lookForInactive: 1
@@ -4486,16 +4218,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_lastPushed: 0
-  m_atLeastBugSpawned:
-    m_intActionValue: 420001
+  m_onIntegerActionReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  m_lastReceived: 0
+  m_atLeastOneBugSpawned:
+    m_intActionValue: 421001
   m_atAllBugSpawned:
     m_intActionValue: 420002
   m_allBugKilled:
     m_intActionValue: 420003
   m_bugsMissionComplete:
     m_intActionValue: 420004
-  m_inResetRequest:
-    m_intActionValue: 420000
+  m_resetRequest:
+    m_intActionValue: 421000
   m_isLeastOneBugSpawned: 0
   m_isAllBugSpawned: 0
   m_isBugKilled: 0
@@ -4508,8 +4244,8 @@ MonoBehaviour:
   - {fileID: 554051724341618067}
   - {fileID: 4906959070378412407}
   - {fileID: 6761853463176703502}
-  m_bugSpawnRangeInt: 421000
-  m_bugKillRangeInt: 431000
+  m_bugSpawnRangeInt: 800
+  m_bugKillRangeInt: 900
 --- !u!1 &7483523961524442439
 GameObject:
   m_ObjectHideFlags: 0
@@ -4655,36 +4391,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d504617b6d062234bbea903bd2e0959d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_onIntegerActionEmitted:
-    m_PersistentCalls:
-      m_Calls: []
-  m_lastPushed: 0
-  m_on:
-    m_intActionValue: 102
-  m_off:
-    m_intActionValue: 202
-  m_currentValue: 0
-  m_onUpdated:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8281026717073409734}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onOn:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onOff:
-    m_PersistentCalls:
-      m_Calls: []
+  m_toggle:
+    m_onIntegerId:
+      m_intActionValue: 1
+    m_offIntegerId:
+      m_intActionValue: 0
+    m_currentValue: 0
+    m_onValueUpdated:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onOnChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onOffChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &8041289132919585935
 GameObject:
   m_ObjectHideFlags: 0
@@ -5311,24 +5035,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d504617b6d062234bbea903bd2e0959d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_onIntegerActionEmitted:
-    m_PersistentCalls:
-      m_Calls: []
-  m_lastPushed: 0
-  m_on:
-    m_intActionValue: 103
-  m_off:
-    m_intActionValue: 203
-  m_currentValue: 0
-  m_onUpdated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onOn:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onOff:
-    m_PersistentCalls:
-      m_Calls: []
+  m_toggle:
+    m_onIntegerId:
+      m_intActionValue: 1
+    m_offIntegerId:
+      m_intActionValue: 0
+    m_currentValue: 0
+    m_onValueUpdated:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onOnChanged:
+      m_PersistentCalls:
+        m_Calls: []
+    m_onOffChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &8856862931645023416
 GameObject:
   m_ObjectHideFlags: 0
@@ -5344,7 +5068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5468341808170001957
 Transform:
   m_ObjectHideFlags: 0
@@ -5364,7 +5088,6 @@ Transform:
   - {fileID: 3164706166441020439}
   - {fileID: 5590954047934640735}
   - {fileID: 4911989973246554831}
-  - {fileID: 2230649862648045078}
   - {fileID: 3778117974678686114}
   - {fileID: 7932521649103750555}
   m_Father: {fileID: 0}
@@ -6140,6 +5863,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_lastPushed: 0
+  m_onIntegerActionReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  m_lastReceived: 0
   m_inOutBugKilled:
     m_intActionValue: 431001
   m_isKilled: 0
@@ -6157,6 +5884,8 @@ MonoBehaviour:
   m_onResetRequest:
     m_PersistentCalls:
       m_Calls: []
+  m_findBugsToKillInChildrenAtAwake: 0
+  m_whereAreBugsStore: {fileID: 0}
 --- !u!4 &6162018070367942223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1593109597025722825, guid: 6a1e52e9ac2ab9b468f50b2887852d9c, type: 3}

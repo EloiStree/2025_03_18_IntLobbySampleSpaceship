@@ -24,11 +24,17 @@ Code In the Demo:
 610 Set Max Game Time to 10 minutes
 
 
-700 Set Light to Red
-701 Set Light to Green
-702 Set Light to Blue
-708 Set Light to While
-709 Set Light to Black
+700 Set Light to Black
+701 Set Light to While
+702 Set Light to Red
+703 Set Light to Green
+704 Set Light to Blue
+705 Set Light to Yellow
+706 Set Light to Orange
+707 Set Light to Purple
+708 Set Light to Cyan
+709 Set Light to Pink
+
 
 800 Kill them all
 900 Spawn them all
