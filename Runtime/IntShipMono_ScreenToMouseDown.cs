@@ -60,9 +60,14 @@ public class IntShipMono_ScreenToMouseDown : MonoBehaviour
 
     public LayerMask layerMask=~1;
 
+    private int m_clickCount;
     private void OnClickPerformed(InputAction.CallbackContext context)
     {
-        m_isPressing = context.ReadValue<float>() > 0.5f;
+        bool value = context.ReadValue<float>() > 0.5f;
+        if (value == m_isPressing)
+            return;
+        
+        m_isPressing = value;
         if (mainCamera == null)
             mainCamera = Camera.main;
         if (mainCamera == null) return;
@@ -75,14 +80,22 @@ public class IntShipMono_ScreenToMouseDown : MonoBehaviour
 
         GameObject[] hits = Physics.RaycastAll(ray, float.MaxValue, layerMask).Select(x => x.collider.gameObject).ToArray();
 
+        Debug.Log("Click" + (m_clickCount++));
         if (hits.Length > 0)
         {
             foreach (var hit in hits)
             {
                 if (m_isPressing)
+                {
+
+                    Debug.Log("Click Down" + (m_clickCount++), hit);
                     hit.BroadcastMessage("OnMouseDown", SendMessageOptions.DontRequireReceiver);
-                else
+                }
+                else {
+
+                    Debug.Log("Click Up " + (m_clickCount++), hit);
                     hit.BroadcastMessage("OnMouseUp", SendMessageOptions.DontRequireReceiver);
+                }
             }
         }
         

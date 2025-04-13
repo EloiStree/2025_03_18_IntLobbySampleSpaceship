@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class IntShipMono_QuickOnTouched : MonoBehaviour
+public class IntShipMono_QuickOnTouchedAndMouseDown : MonoBehaviour
 {
 
     public UnityEvent m_onTouched;
