@@ -4,6 +4,8 @@ using UnityEngine.Events;
 
 namespace Eloi.IntAction
 {
+
+
     public class IntLobbyActionMono_BugToKill : DefaultIntegerListenAndEmitterEventMono
     {
 
