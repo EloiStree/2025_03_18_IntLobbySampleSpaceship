@@ -2,8 +2,9 @@
     "name": "be.elab.intlobbysampleship",
     "rootNamespace": "",
     "references": [
-        "GUID:053953c4f06b70d4297c4d3d429d8b2d",
-        "GUID:43c5663fa97a2f84ba5180f550364095"
+        "be.elab.pushgenericintegerdate",
+        "be.elab.basicactioniid",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

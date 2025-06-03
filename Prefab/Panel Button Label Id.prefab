@@ -160,6 +160,7 @@ GameObject:
   - component: {fileID: 2043035692821267107}
   - component: {fileID: 1124530171850175116}
   - component: {fileID: 6305608552200975870}
+  - component: {fileID: 5038129187513856549}
   m_Layer: 5
   m_Name: Panel Button Label Id
   m_TagString: Untagged
@@ -212,7 +213,8 @@ MonoBehaviour:
       m_Calls: []
   m_lastPushed: 0
   m_label: Red
-  m_integerToPushOnTick: 700
+  m_integerToPushOnTick:
+    m_intActionValue: 0
   m_onLabelChanged:
     m_PersistentCalls:
       m_Calls:
@@ -285,6 +287,29 @@ MonoBehaviour:
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
+--- !u!114 &5038129187513856549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916978991622611456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79b2f6b2e2944a4b8bd6c6e32854a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targetsToAutoFill:
+  - {fileID: 916978991622611456}
+  m_onIntegerActionLoaded:
+    m_PersistentCalls:
+      m_Calls: []
+  m_actionAsInteger:
+    m_loadedDescription: Spawn All the bug
+    m_loadedInteger:
+      m_intActionValue: 800
+    m_integerAsFile: {fileID: 4900000, guid: f81406cf36d8459449a6595ff4805eb9, type: 3}
+  m_pushIntegerAtAwake: 1
 --- !u!1 &8775294887349965725
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +375,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Red (700)'
+  m_text: ' Red (0)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -377,7 +402,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.55
+  m_fontSize: 8
   m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 1

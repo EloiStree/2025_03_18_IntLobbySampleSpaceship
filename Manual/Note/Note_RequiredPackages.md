@@ -1,0 +1,3 @@
+github.com/EloiStree/2024_08_09_DeveloperNote.git
+
+github.com/EloiStree/2025_03_26_ScanForRaspberryPi.git

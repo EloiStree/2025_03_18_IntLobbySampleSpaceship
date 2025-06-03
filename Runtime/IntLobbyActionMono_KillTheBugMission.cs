@@ -2,40 +2,42 @@
 
 namespace Eloi.IntAction
 {
-    public class IntLobbyActionMono_KillTheBugMission : AbstractIntegerListenAndEmitterMono
+    public class IntLobbyActionMono_KillTheBugMission : DefaultIntegerListenAndEmitterEventMono
     {
-            public IntActionId m_atLeastOneBugSpawned = new IntActionId(420001);
-            public IntActionId m_atAllBugSpawned = new IntActionId(420002);
-            public IntActionId m_allBugKilled = new IntActionId(420003);
-            public IntActionId m_bugsMissionComplete = new IntActionId(420004);
-            public IntActionId m_inResetRequest = new IntActionId(420000);
+            public IntActionId m_atLeastOneBugSpawned = new IntActionId(421001);
+            public IntActionId m_atAllBugSpawned = new IntActionId(421002);
+            public IntActionId m_allBugKilled = new IntActionId(421003);
+            public IntActionId m_bugsMissionComplete = new IntActionId(421004);
+            public IntActionId m_resetRequest = new IntActionId(421000);
 
 
-        public bool m_isLeastOneBugSpawned = false;
+            public bool m_isLeastOneBugSpawned = false;
             public bool m_isAllBugSpawned = false;
             public bool m_isBugKilled = false;
             public bool m_isMissionCompleted = false;
 
             public IntLobbyActionMono_BugToKill[] m_bugsToKill;
 
-        public int m_bugSpawnRangeInt = 421000;
-        public int m_bugKillRangeInt = 431000;
-        [ContextMenu("Find bugs to kill in children")]
-        public void FindBugsToKillInChildren()
-        {
+            public int m_bugSpawnRangeInt = 420000;
+            public int m_bugKillRangeInt = 430000;
 
-            m_bugsToKill = this.gameObject. GetComponentsInChildren<IntLobbyActionMono_BugToKill>(true);
-        }
-        [ContextMenu("Give Bugs id")]
-        public void GiveBugKillSpawnId()
-        {
 
-            for (int i = 0; i < m_bugsToKill.Length; i++)
+            [ContextMenu("Find bugs to kill in children")]
+            public void FindBugsToKillInChildren()
             {
-                m_bugsToKill[i].m_inOutBugKilled = new IntActionId( m_bugKillRangeInt + i);
-                m_bugsToKill[i].m_inOutBugSpawned = new IntActionId(m_bugSpawnRangeInt + i);
+
+                m_bugsToKill = this.gameObject. GetComponentsInChildren<IntLobbyActionMono_BugToKill>(true);
             }
-        }
+            [ContextMenu("Give Bugs id")]
+            public void GiveBugKillSpawnId()
+            {
+
+                for (int i = 0; i < m_bugsToKill.Length; i++)
+                {
+                    m_bugsToKill[i].m_inOutBugKilled = new IntActionId( m_bugKillRangeInt + i);
+                    m_bugsToKill[i].m_inOutBugSpawned = new IntActionId(m_bugSpawnRangeInt + i);
+                }
+            }
 
         [ContextMenu("Spawn Them All")]
         public void SpawnsThemAll()
@@ -137,20 +139,20 @@ namespace Eloi.IntAction
                 if (oneBugSpawned != m_isLeastOneBugSpawned)
                 {
                     m_isLeastOneBugSpawned = oneBugSpawned;
-                    m_onIntegerActionEmitted.Invoke(m_atLeastOneBugSpawned.m_intActionValue);
-                    m_lastPushed = m_atLeastOneBugSpawned.m_intActionValue;
+                    m_onIntegerActionEmitted.Invoke(m_atLeastOneBugSpawned.Value);
+                    m_lastPushed = m_atLeastOneBugSpawned.Value;
                 }
                 if (allBugSpawned != m_isAllBugSpawned)
                 {
                     m_isAllBugSpawned = allBugSpawned;
-                    m_onIntegerActionEmitted.Invoke(m_atAllBugSpawned.m_intActionValue);
-                    m_lastPushed = m_atAllBugSpawned.m_intActionValue;
+                    m_onIntegerActionEmitted.Invoke(m_atAllBugSpawned.Value);
+                    m_lastPushed = m_atAllBugSpawned.Value;
                 }
                 if (allBugKilled != m_isBugKilled)
                 {
                     m_isBugKilled = allBugKilled;
-                    m_onIntegerActionEmitted.Invoke(m_allBugKilled.m_intActionValue);
-                    m_lastPushed = m_allBugKilled.m_intActionValue;
+                    m_onIntegerActionEmitted.Invoke(m_allBugKilled.Value);
+                    m_lastPushed = m_allBugKilled.Value;
                 }
 
                 bool isMissionComplete = allBugSpawned && allBugKilled;
@@ -159,8 +161,8 @@ namespace Eloi.IntAction
                     m_isMissionCompleted = isMissionComplete;
                     if (m_isMissionCompleted)
                     {
-                        m_onIntegerActionEmitted.Invoke(m_bugsMissionComplete.m_intActionValue);
-                        m_lastPushed = m_bugsMissionComplete.m_intActionValue;
+                        m_onIntegerActionEmitted.Invoke(m_bugsMissionComplete.Value);
+                        m_lastPushed = m_bugsMissionComplete.Value;
                     }
                 }
             }
@@ -175,7 +177,7 @@ namespace Eloi.IntAction
             {
                 KillAllBugs();
             }
-            else if (m_inResetRequest == integerValue)
+            else if (m_resetRequest == integerValue)
             {
                 ResetThemAll();
             }

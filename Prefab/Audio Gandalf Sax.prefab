@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112838823063624859}
+  - component: {fileID: 6535529178604381787}
   - component: {fileID: 4399538636022268587}
   - component: {fileID: 7003896250255535729}
+  - component: {fileID: 2662433299210856499}
   m_Layer: 5
   m_Name: Audio Gandalf Sax
   m_TagString: Untagged
@@ -37,6 +39,41 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6535529178604381787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197695076165601908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a092724cfb6f58a459795f2e6d3abdb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onIntegerActionReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  m_lastReceived: 0
+  m_integetToTrigger:
+    m_triggerValue:
+      m_intActionValue: 7
+    m_onTriggered:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4399538636022268587}
+          m_TargetAssemblyTypeName: Eloi.IntAction.UnityMono_LoopClipSeveralTime,
+            be.elab.basicactioniid
+          m_MethodName: PlaySound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &4399538636022268587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,13 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 905c26c5fc5daf1439d7a9eb2ef9edde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_onIntegerActionEmitted:
-    m_PersistentCalls:
-      m_Calls: []
-  m_lastPushed: 0
   m_audioSource: {fileID: 7003896250255535729}
-  m_triggerId:
-    m_intActionValue: 7
   m_loopCount: 4
   m_secondPlayingCountSeconds: 0
 --- !u!82 &7003896250255535729
@@ -155,3 +186,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2662433299210856499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197695076165601908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79b2f6b2e2944a4b8bd6c6e32854a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targetsToAutoFill:
+  - {fileID: 197695076165601908}
+  m_onIntegerActionLoaded:
+    m_PersistentCalls:
+      m_Calls: []
+  m_actionAsInteger:
+    m_loadedDescription: "\nThis integer is used to trigger the Gandalf Sax sound. 
+      \nThe number seven was chosen as a nod to the community of the ring.\n"
+    m_loadedInteger:
+      m_intActionValue: 7
+    m_integerAsFile: {fileID: 4900000, guid: 013d8e2162d80ee44a08ff7fa39bafb3, type: 3}
+  m_pushIntegerAtAwake: 1
